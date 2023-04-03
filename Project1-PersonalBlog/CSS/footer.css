@@ -1,0 +1,17 @@
+.footer {
+  background-color: grey;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.footer-link {
+  color: white;
+}
+
+.footer p {
+  width: 100%;
+}
+
+.rw-footer .footer {
+  display: block;
+}

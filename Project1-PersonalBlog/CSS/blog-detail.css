@@ -1,0 +1,80 @@
+@import "header-nav.css";
+@import "footer.css";
+@import "default.css";
+
+.row{
+    min-height: 100px;
+    display: flex;
+    width: 100%;
+    padding: 5px;
+}
+
+.row .col-medium.left-column{
+    float: left;
+    width: 75%;
+    padding-left: 5%;
+}
+
+.row .col-medium.right-column{
+    float: right;
+    width:25%;
+    padding-left: 5%;
+}
+
+.col-m{
+    margin: 10px 0 0 0;
+}
+.box{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.row .col-medium .sec-about {
+    width: 92%;
+    padding: 1%;
+    background-color: aliceblue;
+}
+
+.row .col-medium .sec-archives ul {
+    list-style-type: none;
+    padding-left: 1%;
+}
+
+.sec-social ul{
+    width: 5%;
+    height: 0.5rem;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sec-social ul li{
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    height: 100%;
+}
+
+.sec-social ul li .facebook, .sec-social ul li .linkedin, .sec-social ul li .twitter{
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.button{
+    color:rgb(5, 168, 238);
+    border-radius: 10rem;
+    padding: 5px;
+}
+    
+.block{
+    width: 100%;
+    border: 5px solid black;
+}
+  
+@media(max-width: 200px){
+    .sec-about {
+        width:100%
+    }
+}

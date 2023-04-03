@@ -1,0 +1,54 @@
+@import "header-nav.css";
+@import "footer.css";
+@import "default.css";
+
+.blog-box {
+  display: grid;
+  column-gap: 50px;
+  row-gap: 30px;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+  padding: 10px;
+}
+
+.blog-box .blog-content {
+  font-size: 20px;
+  border: 5px solid;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.post {
+  margin: 0px;
+}
+
+.blog-box .blog-content:nth-child(even) {
+  color: green;
+  background-color: lightyellow;
+}
+
+.blog-box .blog-content:nth-child(odd) {
+  color: black;
+  background-color: lightgrey;
+}
+
+.blog-content:hover {
+  box-shadow: 15px 10px 15px 10px;
+}
+
+.blog-content .p {
+  padding-right: 20px;
+}
+
+@media(max-width: 600px) {
+  .blog-box .blog-content {
+    float: left;
+    width: 50%
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1650px) {
+  .blog-box {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
